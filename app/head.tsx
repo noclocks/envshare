@@ -37,6 +37,9 @@ export default function Head({ title, subtitle }: { title: string; subtitle: str
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={subtitle} />
       <meta property="twitter:image" content={url.toString()} />
+
+      {/* Plausible Analytics */}
+      <script defer data-domain="envshare.noclocks.dev" src="https://plausible.io/js/script.js"></script>
     </>
   );
 }
