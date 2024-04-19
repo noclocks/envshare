@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function Head({ title, subtitle }: { title: string; subtitle: string }) {
   // Fallback tagline
   title ??= "Share Environment Variables Securely";
@@ -39,7 +41,7 @@ export default function Head({ title, subtitle }: { title: string; subtitle: str
       <meta property="twitter:image" content={url.toString()} />
 
       {/* Plausible Analytics */}
-      <script defer data-domain="envshare.noclocks.dev" src="https://plausible.io/js/script.js"></script>
+      <Script defer data-domain="envshare.noclocks.dev" src="https://plausible.io/js/plausible.js" />
     </>
   );
 }
